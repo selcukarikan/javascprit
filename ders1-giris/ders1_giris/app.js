@@ -53,6 +53,12 @@ const zahl2 = 6;
 console.log(zahl1 + zahl2);
 console.log(zahl1 + "" + zahl2);
 
+const r = 5;
+const cevre = 2 * r * piSayisi;
+const alan = piSayisi * r ** 2;
+console.log(cevre, alan);
+console.log("cevre :" + cevre, "Alan :" + alan);
+
 // mod alma %
 
 const zahl3 = 151;
