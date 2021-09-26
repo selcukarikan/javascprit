@@ -4,12 +4,12 @@
 //degiskenin ilk karakteri harf yada alt cizgi olmalidir
 //bosluk , sembol ve özel isaretler iceremez
 
-//js kucuk buyuk harf duyarlidir
+//js kucuk buyuk harf duyarlidir.
 
 // ?var : tekrardan atama yapmak mumkundur
 // ? Ancak, modern JS var keyword'unun kullanımı azaldı.
 //? Çünkü, var global değişken gibi düşünülebilir.
-// ? Günümüzde programcılar global değişken gerekmedikçe VAR tercih etMEMEKtedir.
+// ? Günümüzde programcılar global değişken gerekmedikçe VAR tercih etmemektedir.
 
 alert("Achtung !!!");
 var vname = "selcuk";
