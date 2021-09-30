@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* google font a gir display içinde start 2p, select yap */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /*eğer bunu kullanırsanız, padding değeri kutunun genişliğine ilave olarak eklenmez ve kutunun genişliği sabit kalır. */
+
 }
 
 header {
@@ -15,7 +16,7 @@ header {
 }
 h1 {
   /* header parent ona position relative, child ı olan h1 e de absolute vererek parent ına göre yerleştirmiş oluyoruz, yani ortala dersek parentın içinde ortala*/
-  position: absolute; /*bu olmazsa sol üst köşeye yapışır. Elemente direk pozisyon verebiliyoruz. Relative'de olduğu gibi eski bulunduğu konuma göre HAREKET ETMİYOR.. Direk bizden aldığı pozisyon değerlerine göre hareket ediyor. Poziyonu belirlerken bir üstteki RELATİVE elemente göre konum alıyor. Eğer bu elementin PARENT(bir üstteki element) elementi RELATİVE değilse, o zaman BODY'ye göre hareket eder.
+  position: absolute;/*bu olmazsa sol üst köşeye yapışır. Elemente direk pozisyon verebiliyoruz. Relative'de olduğu gibi eski bulunduğu konuma göre HAREKET ETMİYOR.. Direk bizden aldığı pozisyon değerlerine göre hareket ediyor. Poziyonu belirlerken bir üstteki RELATİVE elemente göre konum alıyor. Eğer bu elementin PARENT(bir üstteki element) elementi RELATİVE değilse, o zaman BODY'ye göre hareket eder.
 */
   width: 100%;
   text-align: center;
@@ -25,15 +26,17 @@ h1 {
   /*yazılan şey 0 px li olsaydı buna gerek yoktu, h1 e ayrılan alanda yüzde elli yazı girsin ve bu alanda yazı tam ortada bulunsun*/
 }
 
+
+
 body {
   font-family: "Press Start 2P";
   color: white;
   background-color: #2d3436;
 }
 
-.intervall {
+.aralik {
   position: absolute;
-
+  
   top: 20px;
   right: 15px;
 }
@@ -42,9 +45,8 @@ body {
   margin-top: 15px;
   margin-left: 15px;
   border: none;
-  width: 600px;
   font-family: inherit;
-  font-size: 20px;
+  font-size: 30px;
   padding: 20px 25px;
   cursor: pointer;
   background-color: #eee;
@@ -66,53 +68,43 @@ body {
 main {
   height: 600px;
   color: #eee;
-  display: flex; /*alttakileri kullanabilmek için*/
+  display: flex;/*alttakileri kullanabilmek için*/
   justify-content: space-around;
   /* yatay olarak */
-  align-items: center;
+  align-items: center; 
   /*dikey ortalar*/
 }
-.recht {
-  width: 200px;
+.sağ {
+  width: 400px;
   font-size: 20px;
 }
 
-.link {
-  width: 390px;
+.sol {
+  width: 400px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   /* buradaki elemanlar sütun şeklinde olsunlar */
   align-items: center;
 }
-.prognose {
+.tahmin {
   background: none;
-  /* kendi rengi iptal ortama ayak uydursun */
-  border: 5px solid #eee;
-  font-family: inherit;
-  color: inherit;
-  font-size: 40px;
+   /* kendi rengi iptal ortama ayak uydursun */
+   border: 5px solid #eee;
+   font-family: inherit;
+   color: inherit;
+   font-size: 40px;
   text-align: center;
-  height: 10px;
-  width: 300px;
-
+   width: 300px;    
+  
   margin-bottom: 20px;
   padding: 50px;
 }
-.nachricht {
+.mesaj {
   margin-bottom: 150px;
-  width: 600px;
 }
-.skor {
+.puan {
   margin-bottom: 20px;
-  width: 600px;
 }
-.highskor {
-  margin-bottom: 20px;
-  width: 30px;
-}
-.button {
-  margin-bottom: 20px;
-  width: 600px;
-  font-size: 20px;
-  font-family: inherit;
-}
+
+
+

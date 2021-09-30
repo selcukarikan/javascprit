@@ -52,7 +52,9 @@ const parag=document.querySelector(".forH1");
 parag.innerHTML=`<h1>${"Programlama Dilleri"}</h1>`;
 
 
+// todo SETATTRİBUTE metodu****************
 
+// document.querySelector(".checkbox").setAttribute("type", "checkbox");
 
 
 //Klavyeden bir tuşa basıldığında büyüsün küçülsün
@@ -98,7 +100,6 @@ if( klavye.keyCode==13    ) { // enter ı çağırdık
 }if (klavye.keyCode==46) //delete yi çağırdık 
 {
 document.querySelector(".sil").onclick();
-
 }
 };
 
