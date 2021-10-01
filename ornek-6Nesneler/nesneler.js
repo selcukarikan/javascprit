@@ -94,3 +94,32 @@ people.forEach((x) => console.log(x.meslek));
 //ornek 2: people dizisindeki tum kisilerin yaslarini 1 artirarak yazdiriniz
 
 people.map((x) => x.yas + 1).forEach((x) => console.log(x));
+
+// ornek 3: yasi 25 e esit veya kucuk olanlarin adlarini yazdir
+
+people.filter((x) => x.yas <= 25).forEach((x) => console.log(x.ad));
+
+//ornek 4: people dizisindeki kisilerin isimlerini buyuk har olarak alan ve yaslarini 5 artirin ve soyadinin da ilk iki harfini yazdir
+
+people
+  .map((x) => {
+    return {
+      ad: x.ad.toUpperCase(),
+      yas: x.yas + 5,
+      soyad: x.soyad.slice(0, 2)
+    };
+  })
+  .forEach((x) => console.log(x));
+
+//ornek 5: meslegi prenses olanlarin isimlerini buyuk harf yapip ve yaslarini yazdiriniz
+
+people;
+const yeni = people
+  .filter((x) => x.meslek == "prenses")
+  .map((x) => {
+    return {
+      ad: x.ad.toLocaleUpperCase(),
+      yas: x.yas
+    };
+  });
+console.log(yeni);
