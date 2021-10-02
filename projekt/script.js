@@ -1,19 +1,30 @@
 var showListe=[];
-//todo son dosyasindan veri getirme asamalari
-fetch("./tv-shows.json").then((cevap)=>cevap.json()).then(veri)=>{
-    
-    showListe=veri;
 
-showIzle(showListe);
+//! json dosyasından veri getirme aşamaları
+
+fetch("./tv-shows.json").then((cevap)=>cevap.json()).then((veri)=>{
+
+
+showListe=veri;
+
+showIzle(showListe); //method call
 
 });
 
-function showIzle(showListe) {
-     
-    var liste=document.querySelector(".liste");
-    showListe.forEach((a)=>{
+//metod oluştur
+function showIzle(showListe){
 
-   
-     liste.innerHTML=liste.innerHTML+`a daki ilk kat verileri a daki 2.kat verileri`  
-    });
-}
+  //!https://getbootstrap.com/docs/4.0/components/card/
+
+  var liste = document.querySelector(".liste");
+  showListe.forEach((a) => {
+    liste.innerHTML = liste.innerHTML + `<div class=  "card col-md-3" >
+  <img class="card-img-top" src=${a.show.image? a.show.image.medium:""} alt="">
+  <div class="card-body">
+    <h5 >${a.show.name}</h5>
+    
+    <a href=${a.show.url} target="_blank" class="btn btn-success">Detaylar</a>
+  </div>
+</div>`;
+  });
+ }
