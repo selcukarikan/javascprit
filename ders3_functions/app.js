@@ -9,7 +9,7 @@
 //}
 //yazdirAd();
 
-// Ornek 1: Klavyeden girilen sayinin tek mi cift mi oldugunu gosteren bir kod yazimi
+// Ornek 1: Klavyeden giriln sayinin tek mi cift mi oldugunu gosteren bir kod yazimi
 //const sayiniz = prompt("lutfen bir sayi giriniz");
 
 //console.log(tekCift(sayiniz));
