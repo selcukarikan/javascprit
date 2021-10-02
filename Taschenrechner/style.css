@@ -1,0 +1,62 @@
+body {
+  background-color: thistle;
+}
+h1 {
+  margin-left: 35%;
+  margin-top: 15%;
+}
+.maschine {
+  background-color: darkkhaki;
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  margin-left: 40%;
+}
+.displayBorder {
+  background-color: navajowhite;
+  width: 230px;
+  height: 70px;
+  margin: 3px 17px 0 17px;
+}
+.displayBorder input {
+  height: 40px;
+  width: 210px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 35px;
+  background-color: chartreuse;
+}
+.satir {
+  margin: 15px 0 10px 0;
+}
+.btn {
+  width: 40px;
+  height: 30px;
+  border-radius: 12px;
+  margin-left: 17px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.btn.dark {
+  color: rgb(26, 25, 24);
+  background-color: gray;
+  border-bottom: black 2px solid;
+}
+.btn.islem {
+  color: red;
+  background-color: black;
+}
+.btn.light {
+  background-color: yellow;
+}
+.btn.yellow {
+  background-color: blue;
+}
+.light:active {
+  border: ;
+}
+.btn.equal {
+  color: slategrey;
+  background-color: wheat;
+}
