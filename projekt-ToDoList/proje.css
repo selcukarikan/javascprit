@@ -1,0 +1,24 @@
+body {
+  font-family: Verdana, monospace, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: burlywood;
+}
+.teil1 span {
+  font-size: 25px;
+  color: brown;
+}
+.teil2 span {
+  font-size: 25px;
+  color: brown;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.teil3 span {
+  font-size: 25px;
+  color: brown;
+}
+.teil4 span {
+  font-size: 25px;
+  color: brown;
+}
